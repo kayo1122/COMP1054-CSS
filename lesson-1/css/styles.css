@@ -1,2 +1,65 @@
 @charset "UTF-8";
 
+/* Named Selector*/
+
+h2{
+    color: red;
+    font-style: italic;
+}
+/* ID Selector */
+#project{
+    color: olive;
+}
+/* Class Selector .unknown */
+.about{
+    background-color: lightgray;
+    }
+    /* contextual/descendant selector */
+section p{
+    color: darkorange;
+}
+/* Class Selector .unknown*/
+.subproject p{
+    color: darkblue;
+}
+/* Group Selector */
+h1,h2 {
+    font-family: sans-serif
+
+}
+/* Pseudo Class Selector */
+a:link {
+    color: blue;
+    text-decoration: none;
+    font-weight:bold;
+}
+a:visited {
+    text-decoration: underline;
+    color: purple;
+    
+}
+a:hover{
+    color: green;
+}
+a:focus{
+    text-decoration: underline;
+    background-color: rgb(255, 0, 0)
+}
+a.active{
+    color: orange;
+}
+/* structural pseudo-class selector */
+li:nth-child(2n+1){
+    background-color: white;
+}
+
+li:nth-of-type(2n){
+    background-color: lightyellow;
+}
+article section:last-of-type{
+    background: lightblue;
+}
+/* sibling and pseudo-element selector */
+h1+p::first-line{
+text-transform: uppercase;
+}
