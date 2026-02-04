@@ -13,23 +13,32 @@ to match as closely as you can with the colors
 on the FIRST paint swatch card provided.
 -------------------------------------------------- */
 	#hex div:nth-of-type(1) {
-		background-color: red;
+		background-color: #ea9599;
 	}
 	#hex div:nth-of-type(2) {
-		background-color: orange;
+		background-color: #f2abaf;
 	}
 	#hex div:nth-of-type(3) {
-		background-color: yellow;
+		background-color: #ffcccf;
 	}
 	#hex div:nth-of-type(4) {
-		background-color: limegreen;
+		background-color: #ffe5e7;
 	}
 /* STEP 2: Set each color in rgba format
 to match as closely as you can with the colors
 on the SECOND paint swatch card provided.
 -------------------------------------------------- */
 	#rgba div:nth-of-type(1) {
-		background-color: red;
+        background-color: rgb(184 134 101);  
+    }
+    #rgba div:nth-of-type(2) {
+        background-color: rgb(152 110 82);  
+    }
+    #rgba div:nth-of-type(3) {
+        background-color: rgb(70 44 27); 
+    }
+    #rgba div:nth-of-type(4) {
+        background-color: rgb(110 76 53);
 	}
 	/* ...and so on... */
 
@@ -38,8 +47,17 @@ to match as closely as you can with the colors
 on the THIRD paint swatch card provided.
 -------------------------------------------------- */
 	#hsla div:nth-of-type(1) {
-		background-color: red;
-	}
+        background-color: hsl(38, 76%, 60%, 1); 
+    }
+    #hsla div:nth-of-type(2) {
+        background-color: hsl(32, 80%, 50%, 1); 
+    }
+    #hsla div:nth-of-type(3) {
+        background-color: hsl(32, 80%, 50%, 1); 
+    }
+    #hsla div:nth-of-type(4) {
+        background-color: hsl(32, 97%, 27%, 1);
+    }
 	/* ...and so on... */
 
 	/* STEP 4: Set each color using a CSS color keywords
@@ -50,7 +68,20 @@ produce an exact rendition of the swatch colors on the FOURTH card provided.
 (https://developer.mozilla.org/en-US/docs/Web/CSS/filter).
 -------------------------------------------------- */
 	#keyword div:nth-of-type(1) {
-		background-color: red;
+		background-color: forestgreen;
+		filter: brightness(70%) saturate(60%) sepia(80%);
+	}
+	#keyword div:nth-of-type(2) {
+		background-color: forestgreen;
+		filter: brightness(130%) saturate(50%) sepia(70%);
+	}
+	#keyword div:nth-of-type(3) {
+		background-color: forestgreen;
+		filter: brightness(130%) saturate(90%) sepia(70%);
+	}
+	#keyword div:nth-of-type(4) {
+		background-color: forestgreen;
+		filter: brightness(100%) saturate(90%) sepia(50%);
 	}
 	/* ...and so on... */
 
@@ -66,61 +97,61 @@ produce an exact rendition of the swatch colors on the FOURTH card provided.
 		<section id="hex">
 			<h2>Hexadecimal</h2>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Raspberry Swirl</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Sophia</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Raspberry White</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Georgian Mist</h3>
 			</div>
 		</section>
 		<section id="rgba">
 			<h2>RGB(A)</h2>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Adobe Plaster</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Chocolate Cream</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Moose Jaw</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Mocha To Go</h3>
 			</div>
 		</section>
 		<section id="hsla">
 			<h2>HSL(A)</h2>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Gold Sunset</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Harvest Flame</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Sun God</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Butterscotch Tempest</h3>
 			</div>
 		</section>
 		<section id="keyword">
 			<h2>Keyword / CSS Filter</h2>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Patina Bronze</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Sage Whisper</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Dried Thyme</h3>
 			</div>
 			<div>
-				<h3>Type colour name here</h3>
+				<h3>Copper Green</h3>
 			</div>
 		</section>
 	</main>
