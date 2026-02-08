@@ -27,16 +27,20 @@ h1 {
 }
 
 h2 { 
-    margin-top: 10px;
+    width: 40%;
+    margin: 10px auto;
     border-radius: 30px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     background-color: #000000;
+    background-position: center;
+    background-size: cover;
     color: rgb(233, 97, 97);
     padding: 10px;
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
+    text-align: center;
 }
 
 p { 
@@ -47,9 +51,11 @@ p {
   font-family: "Cormorant Garamond", serif;
   color: black;
   font-style: italic;
+  text-align: center;
 
 }
 ul{
+  text-align: center;
   padding-left: 0;
   margin-left: 50px;
   margin-top:  10px;
