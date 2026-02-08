@@ -1,97 +1,70 @@
-.art{
-position: absolute;
-width: 600px;
-height: 600px;
-left: 100px;
-background-color: #87CEEB;
-align-content: center;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.art p{
-  position: absolute;
-  margin: 0;
-  padding: 10px;
-  
-  border: 2px solid white;
-  color: white;
-  font-size: 12px;
+
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: #edefe8; 
+    margin: 0; 
+    padding: 0; 
+    padding-bottom: 60px;
 }
-.one{
-  width: 200px;
-  height:15px;
-  left: 500px;
-  top: 3px;
-  background: #d2691e;
+
+h1 { 
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    border-radius:20px;
+    text-align: center;
+    padding: 20px;
+    font-family: "Permanent Marker", cursive;
+    color: rgb(233, 97, 97);
 
 }
-.two{
-  width: 200px;
-  height:15px;
-  left: 720px;
-  top: 3px;
-  background: #a0522d;
-  
+
+h2 { 
+    margin-top: 10px;
+    border-radius: 30px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: #000000;
+    color: rgb(233, 97, 97);
+    padding: 10px;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
-.three{
-  width: 250px;
-  height:15px;
-  left: 449px;
-  top: 40px;
-  background: #cd853f;
+
+p { 
+  padding-left: 0;
+  margin-left: 50px;
+  margin-top: 10px;
+  list-style-type: none;
+  font-family: "Cormorant Garamond", serif;
+  color: black;
+  font-style: italic;
 
 }
-.four{
-  width: 250px;
-  height:15px;
-  left: 740px;
-  top: 40px;
-  background: #deb887;
-
+ul{
+  padding-left: 0;
+  margin-left: 50px;
+  margin-top:  10px;
+  list-style-type: none;
+  font-family: "Cormorant Garamond", serif;
+  color: black;
+  font-style: italic;
 }
-.five{
-  width: 400px;
-  height:10px;
-  left: 359px;
-  top: 76px;
-  background: #f4a460;
-
-}
-.six{
-  width: 400px;
-  height:10px;
-  left: 720px;
-  top: 76px;
-  background: #ffdead;
-
-}
-.seven{
-  width: 430px;
-  height:10px;
-  left: 268px;
-  top: 108px;
-  background: #ffe4c4;
-
-}
-.eight{
-  width: 450px;
-  height:10px;
-  left: 850px;
-  top: 108px;
-  background: #fff8dc;
-
-}
-.nine{
-  width: 500px;
-  height:10px;
-  left: 500px;
-  top: 140px;
-  background: #faf0e6;
-
-}
-.ten{
-  width: 500px;
-  height:10px;
-  left: 500px;
-  top: 170px;
-  background: #ffebcd;
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #bfabab;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
