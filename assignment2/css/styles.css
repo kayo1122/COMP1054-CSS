@@ -1,43 +1,42 @@
 
 #container{
   display: grid;
-  grid-template-columns: 1fr 2fr; /* two equal columns */
+  grid-template-columns: 1fr 1.4fr; 
+  grid-template-rows: auto auto;
   gap: 20px;                      /* spacing between blocks */
-  padding: 20px;
-
+  border: 2px solid #000; /* optional: to visualize the container */
 }
+.title {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 5em;
+  text-transform: lowercase;
+  font-weight: 900;
+  }
+
 .box1{
-    background: #572b2b;
-    padding: 20px;
-    border-radius: 8px;
+    grid-column: 2;
+    background-color: aqua;
 }
 .box2{
-    background: #cd8d8d;
-    padding: 20px;
-    border-radius: 8px;
+    grid-column: 3;
+    grid-row: 2 / span 3;
+    background-color: aqua;
 }
 .box3{
-    background: #e90606;
-    padding: 20px;
-    border-radius: 8px;
+    grid-column: 2;
+    grid-row: 2;
+    background-color: aqua;
 }
-.box4{
-    background: #1a6937;
-    padding: 20px;
-    border-radius: 8px;
-}
-header > p{
+
+main > p{
     text-transform: uppercase;
     font-size: small;
 }
-header > h1{
-    font-size: 3em;
-    text-transform: lowercase;
-    font-weight: 900;
-}
+
 header > h1 > em{
-    font-weight: 900;
     color:hsl(0, 100%, 40%);
 }
+
 
 
