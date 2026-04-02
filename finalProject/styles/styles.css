@@ -1,0 +1,74 @@
+/* Mobile Layout */
+body {
+  display: flex;
+  flex-direction: column; /* stacks children vertically */
+  margin: 0;
+  min-height: 100vh;
+}
+.link-github svg {
+
+  width: 12px;  
+  height: 12px;
+  
+  flex-shrink: 0; 
+}
+.skip-link{
+    background-color: rgb(218, 217, 160);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.container > h2{
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(218, 217, 160);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container > h3{
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(218, 217, 160);
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    color: white;
+}
+.about, .guidelines, .contribute, .files{
+    background-color: rgb(218, 217, 160);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    margin: 1rem;
+}
+main {
+  flex: 1; /* fills remaining space */
+  padding: 1rem;
+}
+
+aside {
+  background: #f4f4f4;
+  padding: 1rem;
+}
+a:link {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: red;
+}
+ .container > h1{
+    text-align: center;
+    font-size: 3em;
+    color: rgb(218, 217, 160);
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ body {
+    background-color: rgb(35, 80, 44);
+    font-family: 'Arial', sans-serif;
+ }
+
+ /* Desktop Layout */
+
+ /*layout for both*/
+ 
