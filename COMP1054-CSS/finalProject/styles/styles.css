@@ -13,7 +13,7 @@ body {
 /* typography - making stuff readable */
 a:link, a:visited {
   color: #fff; /* keeping links white so they pop against the green */
-  text-decoration: underline;git log --oneline
+  text-decoration: underline;
 }
 h1, h2, h3 {
   color: rgb(218, 217, 160);
