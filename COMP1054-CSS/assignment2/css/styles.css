@@ -1,0 +1,212 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    color: #111;
+}
+
+/* ── CONTAINER ── */
+#container {
+    max-width: 780px;
+    margin: 20px auto;
+    padding: 15px 20px 20px;
+    border: 1px solid #ccc;
+}
+
+/* HEADER */
+header {
+    padding-bottom: 6px;
+    margin-bottom: 18px;
+}
+
+header > p {
+    position: absolute;
+    top: 6px;
+    left: 375px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.68em;
+    letter-spacing: 0.12em;
+    margin: 0;
+    font-weight: normal;
+}
+
+header > h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    text-transform: lowercase;
+    font-size: 5.8em;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 5px;
+    line-height: 0.92;
+    letter-spacing: -2px;
+}
+
+header > h1 > em {
+    color: hsl(0, 100%, 40%);
+    
+}
+
+/* MAIN  */
+main {
+    display: grid;
+    grid-template-columns: 185px 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+    row-gap: 0;
+}
+
+/* ARTICLES (right column)  */
+main > article:nth-of-type(1) {
+    grid-column: 2;
+    grid-row: 1;
+    overflow: hidden; /* contains the floated dog image */
+}
+
+main > article:nth-of-type(1) > h2 {
+    font-family: Georgia, serif;
+    font-size: 1.35em;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    color: red;
+}
+
+main > article:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+main > article:nth-of-type(2) > h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.4em;
+    font-weight: 200;
+    text-transform: lowercase;
+    margin: 8px 0 4px 0;
+    line-height: 1;
+}
+
+main > article:nth-of-type(2) > h2::first-letter {
+    text-transform: uppercase;
+}
+
+/*  ASIDES (left column)  */
+main > aside:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 0.82em;
+    line-height: 1.65;
+    padding-right: 15px;
+    border-right: 1px solid #888;
+}
+
+main > aside:nth-of-type(2) {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: rgb(235, 234, 234);
+    padding: 14px;
+    font-size: 0.82em;
+    line-height: 1.6;
+    margin-top: 15px;
+    align-self: start;
+}
+
+main > aside:nth-of-type(2) > h2 {
+    color: red;
+    font-size: 1.15em;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+}
+
+main > aside:nth-of-type(2) > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+main > aside:nth-of-type(2) > ul > li {
+    margin-bottom: 10px;
+    padding-left: 14px;
+    position: relative;
+}
+
+main > aside:nth-of-type(2) > ul > li::before {
+    content: "+ ";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: #000;
+}
+
+main > aside:nth-of-type(2) > ul > li > h3 {
+    font-size: 0.95em;
+    font-weight: bold;
+    margin: 0 0 2px 0;
+    color: #000;
+}
+
+main > aside:nth-of-type(2) > ul > li > p {
+    margin: 0;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+/* IMAGES */
+img[src="images/dog-and-owner.jpg"] {
+    float: right;
+    width: 40%;
+    height: auto;
+    margin: 0 0 10px 14px;
+}
+
+img[src="images/snow-tubing.jpg"] {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 2px;
+}
+
+/* LINKS  */
+a:link,
+a:visited {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*  GENERAL PARAGRAPH TWEAKS  */
+main > article > p,
+main > aside > p {
+    margin-top: 0;
+    line-height: 1.55;
+}
+
+mark {
+    background: none;
+    font-style: italic;
+}
+
+/*  FOOTER */
+footer {
+    border-top: 1px solid #999;
+    padding-top: 5px;
+    margin-top: 18px;
+    font-size: 0.8em;
+}
+
+footer em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+

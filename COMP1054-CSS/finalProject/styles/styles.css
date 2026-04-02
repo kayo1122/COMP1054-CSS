@@ -1,0 +1,123 @@
+
+/* --- global & mobile styles --- */
+/* everything starts stacked here for phones */
+body {
+  background-color: rgb(35, 80, 44);
+  font-family: 'arial', sans-serif;
+  color: rgb(218, 217, 160);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+}
+/* typography - making stuff readable */
+a:link, a:visited {
+  color: #fff; /* keeping links white so they pop against the green */
+  text-decoration: underline;git log --oneline
+}
+h1, h2, h3 {
+  color: rgb(218, 217, 160);
+  font-family: 'georgia', serif; /* serif headings for a classier look */
+  line-height: 1.2;
+}
+/* the hero header area */
+header:first-of-type .container {
+  background: linear-gradient(to bottom, #596d3a, #35502c);
+  margin-top: 10px;
+  padding: 2px;
+  border: 2px solid rgb(231, 231, 231);
+}
+.container {
+  text-align: center; /* keeping the text centered by default */
+}
+.container > h1 {
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+}
+.container > h2, .container > h3, .container > p {
+  color: rgb(218, 217, 160);
+}
+/* nav links - cleaning up the default look */
+a:link {
+  text-decoration: none;
+  color: rgb(238, 247, 208);
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: rgb(238, 247, 208); /* keep visited links the same so it's not ugly */
+}
+/* accessibility - the hidden skip link for keyboard users */
+.skip-link {
+  position: absolute;
+  top: -100px; /* hidden off-screen normally */
+  left: 0;
+  background: rgb(218, 217, 160);
+  color: black;
+  padding: 10px;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 0; /* pops down when you hit tab */
+}
+/* the github icon */
+.link-github svg {
+  fill: rgb(218, 217, 160);
+  width: 12px;  
+  height: 12px;
+  flex-shrink: 0; 
+}
+main {
+  flex: 1; /* makes the main content fill the empty space */
+  padding: 1rem;
+}
+aside {
+  background-color: #596d3a;
+  padding: 1rem;
+}
+/* --- desktop layout --- */
+/* switching to grid once we have more screen width */
+@media (min-width: 768px) {
+  main > .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* two even columns side-by-side */
+    align-items: start; /* stops boxes from stretching weirdly */
+    gap: 40px;
+  }
+  /* about spans two rows on the left to fill the height */
+  #about {
+    grid-column: 1;
+    grid-row: 1 / 3; 
+  }
+  /* stacking these two on the right side */
+  #contribute {
+    grid-column: 2;
+    grid-row: 1; 
+  }
+  #guidelines {
+    grid-column: 2;
+    grid-row: 2; 
+  }
+}
+/* navigation bar - flexbox keeps it horizontal */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; 
+    list-style: none;
+    padding: 2rem 0;
+}
+ul li a {
+    color: rgb(218, 217, 160) !important; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+ul li a:hover {
+    border-bottom: 2px solid rgb(218, 217, 160); /* clean underline effect on hover */
+}
+ 
