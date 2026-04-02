@@ -1,45 +1,66 @@
-/* Mobile Layout */
+/* GLOBAL & MOBILE STYLES  */
+
 body {
+  background-color: rgb(35, 80, 44);
+  font-family: 'Arial', sans-serif;
   display: flex;
-  flex-direction: column; /* stacks children vertically */
+  flex-direction: column; /* Stacks everything vertically for mobile */
   margin: 0;
   min-height: 100vh;
 }
-.link-github svg {
 
+/* typography */
+.container > h1 {
+  text-align: center;
+  font-size: 3em;
+  color: rgb(218, 217, 160);
+}
+
+.container > h2 {
+  text-align: center;
+  font-size: 1.5em;
+  color: rgb(218, 217, 160);
+}
+
+.container > h3 {
+  text-align: center;
+  font-size: 1.2em;
+  color: rgb(218, 217, 160);
+}
+
+/* Links and Navigation */
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: red;
+}
+
+ul {
+  color: white;
+  list-style: none;
+  padding: 0;
+}
+
+/* Specific Components */
+.skip-link {
+  background-color: rgb(218, 217, 160);
+}
+
+.link-github svg {
   width: 12px;  
   height: 12px;
-  
   flex-shrink: 0; 
 }
-.skip-link{
-    background-color: rgb(218, 217, 160);
-    font-family: Arial, Helvetica, sans-serif;
 
-}
-.container > h2{
-    text-align: center;
-    font-size: 1.5em;
-    color: rgb(218, 217, 160);
-    font-family: Arial, Helvetica, sans-serif;
-}
-.container > h3{
-    text-align: center;
-    font-size: 1.2em;
-    color: rgb(218, 217, 160);
-    font-family: Arial, Helvetica, sans-serif;
-}
-ul{
-    color: white;
-}
-.about, .guidelines, .contribute, .files{
-    background-color: rgb(218, 217, 160);
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 1rem;
-    margin: 1rem;
-}
 main {
-  flex: 1; /* fills remaining space */
+  flex: 1; 
   padding: 1rem;
 }
 
@@ -47,28 +68,30 @@ aside {
   background: #f4f4f4;
   padding: 1rem;
 }
-a:link {
-    text-decoration: none;
-    color: black;
-}
-a:hover {
-    text-decoration: underline;
-}
-a:visited {
-    color: red;
-}
- .container > h1{
-    text-align: center;
-    font-size: 3em;
-    color: rgb(218, 217, 160);
-    font-family: Arial, Helvetica, sans-serif;
- }
- body {
-    background-color: rgb(35, 80, 44);
-    font-family: 'Arial', sans-serif;
- }
+/* DESKTOP LAYOUT */
 
- /* Desktop Layout */
+@media (min-width: 768px) {
+  /* This turns the container into a 2-column grid */
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Main is twice as wide as Sidebar */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the whole website on the screen */
+  }
 
- /*layout for both*/
+
+  aside {
+    grid-column: 2;
+    margin-top: 1rem; /* Aligns with the main content padding */
+  }
+  
+  /* Making the nav links go horizontal on desktop */
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+}
  
