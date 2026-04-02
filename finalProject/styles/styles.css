@@ -9,11 +9,33 @@ body {
   min-height: 100vh;
 }
 
+
 /* typography */
+
+body {
+    color: rgb(218, 217, 160); /* That light tan color */
+}
+
+a:link, a:visited {
+    color: #fff; /* White links */
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    color: rgb(218, 217, 160);
+}
+header:first-of-type .container {
+    background-color: #596d3a;
+  margin-top: 10px;
+  padding: 2px;
+  border: 2px solid rgb(231, 231, 231);
+}
+.container {
+  text-align: center; }
 .container > h1 {
   text-align: center;
   font-size: 3em;
-  color: rgb(218, 217, 160);
+  color: rgb(255, 255, 255);
 }
 
 .container > h2 {
@@ -27,11 +49,16 @@ body {
   font-size: 1.2em;
   color: rgb(218, 217, 160);
 }
+.container > p {
+  text-align: center;
+  font-size: 1em;
+  color: rgb(218, 217, 160);
+}
 
 /* Links and Navigation */
 a:link {
   text-decoration: none;
-  color: black;
+  color: rgb(238, 247, 208);
 }
 
 a:hover {
@@ -42,11 +69,7 @@ a:visited {
   color: red;
 }
 
-ul {
-  color: white;
-  list-style: none;
-  padding: 0;
-}
+
 
 /* Specific Components */
 .skip-link {
@@ -54,6 +77,8 @@ ul {
 }
 
 .link-github svg {
+text-align: center;
+fill: rgb(218, 217, 160);
   width: 12px;  
   height: 12px;
   flex-shrink: 0; 
@@ -65,33 +90,55 @@ main {
 }
 
 aside {
-  background: #f4f4f4;
+  background-color: #596d3a;
   padding: 1rem;
 }
 /* DESKTOP LAYOUT */
 
 @media (min-width: 768px) {
-  /* This turns the container into a 2-column grid */
-  .container {
+  main > .container {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* Main is twice as wide as Sidebar */
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto; /* Centers the whole website on the screen */
+    grid-template-columns: 1fr 1fr;
+    align-items: start; /* Prevents elements from stretching to match heights */
+    gap: 40px;
   }
 
+  #about {
+    grid-column: 1;
+    grid-row: 1 / 3; /* Tells About to span across two rows on the left */
+  }
 
-  aside {
+  #contribute {
     grid-column: 2;
-    margin-top: 1rem; /* Aligns with the main content padding */
+    grid-row: 1; /* Puts Contribute at the very top of the right column */
   }
-  
-  /* Making the nav links go horizontal on desktop */
-  ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
+
+  #guidelines {
+    grid-column: 2;
+    grid-row: 2; /* Puts Guidelines directly under Contribute */
   }
 }
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Big gap for a modern look */
+    list-style: none;
+    padding: 2rem 0;
+}
+
+ul li a {
+    color: rgb(218, 217, 160) !important; /* Force the color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    border-bottom: 2px solid rgb(218, 217, 160);
+}
+
  
